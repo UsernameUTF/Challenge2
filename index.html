@@ -12,7 +12,7 @@
   <style>
     :root {
       --main-padding:20px;
-      --main-color:white;
+      --main-color:hsla(0, 0%, 100%, 0.75);
       --main-margin-y:1rem;
       --header-size: calc(1.3rem + 0.4vw);
       --pr-size: 1rem;
@@ -24,7 +24,7 @@
     }
     body {
       margin: 0;
-      font-family: sans-serif;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     .container {
       display: grid;
@@ -44,13 +44,13 @@
       
     }
     .container .card:nth-child(1) {
-      background-color: orange;
+      background-color: hsl(31, 77%, 52%);
     }
     .container .card:nth-child(3) {
-      background-color: #01371f;
+      background-color: hsl(179, 100%, 13%) ;
     }
     .container .card:nth-child(2) {
-      background-color: #445a44;
+      background-color: hsl(184, 100%, 22%);
     }
     .container .card h1 {
       font-size: var(--header-size);
@@ -81,19 +81,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: .5s;
       text-transform: capitalize;
-
+      font-weight: bold;
     }
    
     .container .card:nth-child(1) .button a {
-      color: orange;
+      color: hsl(31, 77%, 52%);
     }
     .container .card:nth-child(2) .button a {
-      color: #445a44;
+      color: hsl(184, 100%, 22%);
     }
     .container .card:nth-child(3) .button a {
-      color: #01371f;
+      color: hsl(179, 100%, 13%);
     }
     .container .card .button a:hover {
       background-color: transparent;
